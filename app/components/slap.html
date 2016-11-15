@@ -1,0 +1,59 @@
+<div class="container text-center text">
+    <div class="text-center">
+    </div>
+    <div class="row">
+        <div class="col-xs-5 text-center">
+            <h2>Choose Your Character</h2>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                    <li><a ng-click="$ctrl.harry()">Harry</a></li>
+                    <li><a ng-click="$ctrl.snape()">Snape</a></li>
+                    <li><a ng-click="$ctrl.dumbledore()">Dumbledore</a></li>
+                </ul>
+            </div>
+            <div class="progress">
+                <div ng-class="$ctrl.class" class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="{{$ctrl.goodHealth}}" aria-valuemin="0" aria-valuemax="100" style="width: {{$ctrl.goodHealth}}%;">
+                </div>
+            </div>
+            <div><img class="pic-box" ng-src="{{$ctrl.goodImage}}"></div> 
+        </div>
+        <div class="col-xs-2">
+            <button class="button btn btn-info attack" ng-click="$ctrl.reset()"><h4>Reset</h4></button>
+            <button class="button btn btn-default attack" ng-click="$ctrl.slap()"><h4>Confundus</h4></button>
+            <button class="button btn btn-default attack" ng-click="$ctrl.punch()"><h4>Expelliarmus</h4></button>
+            <button class="button btn btn-default attack" ng-click="$ctrl.kick()"><h4>Sectumsempra</h4></button>
+            <button class="button btn btn-default attack" ng-click="$ctrl.hadouken()"><h4>Avada Kedavra</h4></button>
+            <div class="message"><h3>{{$ctrl.message}}</h3></div>
+        </div>
+        <div class="col-xs-5">
+            <h2>Choose Your Enemy</h2>
+            <div class="dropdown">
+                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                    Dropdown
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a ng-click="$ctrl.malfoy()">Malfoy</a></li>
+                    <li><a ng-click="$ctrl.umbridge()">Umbridge</a></li>
+                    <li><a ng-click="$ctrl.voldemort()">Voldemort</a></li>
+                </ul>
+            </div>
+            <div class="progress">
+                <div ng-class="$ctrl.class2" class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="{{$ctrl.badHealth}}" aria-valuemin="0" aria-valuemax="{{$ctrl.badHealth}}" style="width: {{$ctrl.badHealth}}%;">
+                </div>
+            </div>
+            <div><img class="pic-box" ng-src="{{$ctrl.badImage}}"></div>
+        </div>
+    </div>
+</div>
+            
+            
+
+                    
+                   
+                   
+        
